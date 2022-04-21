@@ -1,5 +1,5 @@
 package cardgame;
-
+import static java.lang.Math.sqrt;
 import cardgame.Card.Suit;
 import java.util.List;
 
