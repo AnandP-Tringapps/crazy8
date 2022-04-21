@@ -32,7 +32,7 @@ public class CardCountingStrategy implements PlayerStrategy{
     }
     for (Rank i : Card.Rank.values()){
       rankCount.put(i ,0);
-    }
+    } 
     for (Card i : hand){
       suitCount.replace(i.getSuit(), suitCount.get(i.getSuit())+1);
       rankCount.replace(i.getRank(), rankCount.get(i.getRank())+1);
