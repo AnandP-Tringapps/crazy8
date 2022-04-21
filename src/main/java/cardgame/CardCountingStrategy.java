@@ -71,7 +71,7 @@ public class CardCountingStrategy implements PlayerStrategy{
     double bestCurrentScore = -1;
     for (Card i : hand){
       if (i.getSuit().equals(topCard.getSuit())|| (i.getRank().equals(topCard.getRank()))){
-        double score = suitCount.get(i.getSuit()) / 13d + (rankCount.get(i.getRank()) /4);
+        double score = suitCount.get(i.getSuit()) / 13d + (rankCount.get(i.getRank()) /4d);
         for (Card j  : goodPlay){
           if (i.getSuit().equals(j.getSuit())||(i.getRank().equals(j.getRank()))){
             score += 0.25;
